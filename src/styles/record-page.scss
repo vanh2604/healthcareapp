@@ -1,0 +1,37 @@
+.button-tittle {
+  width: 305px;
+  height: 305px;
+  border: 15px solid #FFCC21;
+  background-color: #2E2E2E;
+  .img {
+    transform: scale(1.2,1);
+  }
+  .faded {
+    top: 0px;
+    background-color: rgb(46,46,46,0.85);
+  }
+  .title {
+    font-size: 25px;
+    color: #FFCC21;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 80px;
+  }
+  .desc {
+    width: 160px;
+    background-color: #FF963C;
+    padding: 2px 4px;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 130px;
+  }
+}

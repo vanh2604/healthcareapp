@@ -1,0 +1,18 @@
+.top {
+  width: 0;
+  border-bottom: 36px solid #FFCC21;
+  border-left: 57px solid transparent;
+  border-right: 57px solid transparent;
+}
+.mid {
+  width: 114px;
+  height: 72px;
+  background: linear-gradient(180deg, #FFCC21 0%, #FF963C 100%);
+}
+
+.bottom {
+  width: 0;
+  border-top: 36px solid #FF963C;
+  border-left: 57px solid transparent;
+  border-right: 57px solid transparent;
+}
