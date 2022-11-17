@@ -1,11 +1,21 @@
 import React from 'react';
 import './recommendednews.scss';
+import { IRecommendNew } from '../../interfaces/recommend';
 
-const RecommendedNews: React.FC = () => {
+interface RecommendProps {
+  recommend: IRecommendNew;
+}
+
+const RecommendedNews: React.FC<RecommendProps> = (props) => {
+  const { recommend } = props;
   return (
-    <div className="relative news mb-2 mr-2">
-      <img className="w-full h-full" src="./assets/Photo/column-1.jpg"></img>
-      <div className="info">2021.05.17 23:25</div>
+    <div style={{ width: '240px' }} className="mb-2 mr-2">
+      <div className="relative news">
+        <img className="w-full h-full" src={recommend.imgUrl}></img>
+        <div className="info">{recommend.date}</div>
+      </div>
+      <div className="title">{recommend.title}</div>
+      <div className="tag">{recommend.tag}</div>
     </div>
   );
 };

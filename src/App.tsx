@@ -2,9 +2,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import routes from './routes';
-import Home from './pages/Home';
-import Health from './pages/Health';
-import { PATH } from './routes/constants';
 import { Suspense } from 'react';
 
 const App = () => {

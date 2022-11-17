@@ -1,14 +1,18 @@
 import React from 'react';
 import './diary.scss';
-const Diary: React.FC = () => {
+import { IMyDiary } from '../../interfaces/record';
+
+interface DiaryProps {
+  diary: IMyDiary;
+}
+
+const Diary: React.FC<DiaryProps> = (props) => {
+  const { diary } = props;
   return (
     <div className="diary">
-      <div className="datetime">2021.05.21</div>
-      <div className="datetime">23:25</div>
-      <div className="desc">
-        私の日記の記録が一部表示されます。
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…
-      </div>
+      <div className="datetime">{diary.date}</div>
+      <div className="datetime">{diary.time}</div>
+      <div className="desc">{diary.content}</div>
     </div>
   );
 };

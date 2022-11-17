@@ -1,5 +1,5 @@
 .news {
-  width: 234px;
+  width: 240px;
   height: 144px;
   .info {
     color: white;
@@ -9,4 +9,14 @@
     background-color: #FFCC21;
     padding: 3px 5px 3px 4px;
   }
+}
+.title {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.tag {
+  font-size: 12px;
+  color: #FF963C;
+  margin-top: 5px;
 }
